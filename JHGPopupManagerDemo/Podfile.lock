@@ -1,0 +1,46 @@
+PODS:
+  - JHGPopupKit (1.7.0):
+    - JHGPopupKit/Core (= 1.7.0)
+    - JHGPopupKit/Plugins (= 1.7.0)
+    - JHGPopupKit/PopupView (= 1.7.0)
+    - JHGPopupKit/PopupViewController (= 1.7.0)
+    - Masonry (~> 1.1.0)
+  - JHGPopupKit/Core (1.7.0):
+    - Masonry (~> 1.1.0)
+  - JHGPopupKit/Plugins (1.7.0):
+    - JHGPopupKit/PopupView
+    - Masonry (~> 1.1.0)
+  - JHGPopupKit/PopupView (1.7.0):
+    - JHGPopupKit/Core
+    - Masonry (~> 1.1.0)
+  - JHGPopupKit/PopupViewController (1.7.0):
+    - JHGPopupKit/Core
+    - Masonry (~> 1.1.0)
+  - JHGPopupManager (1.0.0):
+    - JHGPopupKit (~> 1.7.0)
+  - Masonry (1.1.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - JHGPopupManager (from `../`)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - JHGPopupKit
+    - Masonry
+    - SnapKit
+
+EXTERNAL SOURCES:
+  JHGPopupManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JHGPopupKit: ff54c104ae3163d0ea6e046a5f3cd0e44fab4edd
+  JHGPopupManager: cdf1acd35b66300fd3aada216733045710f68d17
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 5b2194626c6176e5b26a1f9be14fa9e232d1683c
+
+COCOAPODS: 1.16.2

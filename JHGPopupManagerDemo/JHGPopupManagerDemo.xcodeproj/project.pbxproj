@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4865777FA3243B4AB547FAB8 /* Pods_JHGPopupManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960E836C58C81FBDB4BAA48D /* Pods_JHGPopupManagerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FDA5CB52E25452100608205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FDA5C962E25451E00608205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FDA5C9D2E25451E00608205;
+			remoteInfo = JHGPopupManagerDemo;
+		};
+		8FDA5CBF2E25452100608205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FDA5C962E25451E00608205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FDA5C9D2E25451E00608205;
+			remoteInfo = JHGPopupManagerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DC7D6089B019104686C5C06 /* Pods-JHGPopupManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHGPopupManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-JHGPopupManagerDemo/Pods-JHGPopupManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8FDA5C9E2E25451E00608205 /* JHGPopupManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHGPopupManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDA5CB42E25452100608205 /* JHGPopupManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHGPopupManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDA5CBE2E25452100608205 /* JHGPopupManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHGPopupManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		960E836C58C81FBDB4BAA48D /* Pods_JHGPopupManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHGPopupManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6733CD1C94920AD23B77949 /* Pods-JHGPopupManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHGPopupManagerDemo.debug.xcconfig"; path = "Target Support Files/Pods-JHGPopupManagerDemo/Pods-JHGPopupManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8FDA5CC62E25452100608205 /* Exceptions for "JHGPopupManagerDemo" folder in "JHGPopupManagerDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FDA5C9D2E25451E00608205 /* JHGPopupManagerDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8FDA5CA02E25451E00608205 /* JHGPopupManagerDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FDA5CC62E25452100608205 /* Exceptions for "JHGPopupManagerDemo" folder in "JHGPopupManagerDemo" target */,
+			);
+			path = JHGPopupManagerDemo;
+			sourceTree = "<group>";
+		};
+		8FDA5CB72E25452100608205 /* JHGPopupManagerDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JHGPopupManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		8FDA5CC12E25452100608205 /* JHGPopupManagerDemoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JHGPopupManagerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FDA5C9B2E25451E00608205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4865777FA3243B4AB547FAB8 /* Pods_JHGPopupManagerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDA5CB12E25452100608205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDA5CBB2E25452100608205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33ECEAB295B4E426CE27E0F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960E836C58C81FBDB4BAA48D /* Pods_JHGPopupManagerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FDA5C952E25451E00608205 = {
+			isa = PBXGroup;
+			children = (
+				8FDA5CA02E25451E00608205 /* JHGPopupManagerDemo */,
+				8FDA5CB72E25452100608205 /* JHGPopupManagerDemoTests */,
+				8FDA5CC12E25452100608205 /* JHGPopupManagerDemoUITests */,
+				8FDA5C9F2E25451E00608205 /* Products */,
+				A65979892429706D3CE5EBAF /* Pods */,
+				33ECEAB295B4E426CE27E0F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FDA5C9F2E25451E00608205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA5C9E2E25451E00608205 /* JHGPopupManagerDemo.app */,
+				8FDA5CB42E25452100608205 /* JHGPopupManagerDemoTests.xctest */,
+				8FDA5CBE2E25452100608205 /* JHGPopupManagerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A65979892429706D3CE5EBAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6733CD1C94920AD23B77949 /* Pods-JHGPopupManagerDemo.debug.xcconfig */,
+				8DC7D6089B019104686C5C06 /* Pods-JHGPopupManagerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FDA5C9D2E25451E00608205 /* JHGPopupManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDA5CC72E25452100608205 /* Build configuration list for PBXNativeTarget "JHGPopupManagerDemo" */;
+			buildPhases = (
+				810BA2CFDF6C9B40A584E8D8 /* [CP] Check Pods Manifest.lock */,
+				8FDA5C9A2E25451E00608205 /* Sources */,
+				8FDA5C9B2E25451E00608205 /* Frameworks */,
+				8FDA5C9C2E25451E00608205 /* Resources */,
+				C6193C5C04143E1149D05844 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8FDA5CA02E25451E00608205 /* JHGPopupManagerDemo */,
+			);
+			name = JHGPopupManagerDemo;
+			productName = JHGPopupManagerDemo;
+			productReference = 8FDA5C9E2E25451E00608205 /* JHGPopupManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FDA5CB32E25452100608205 /* JHGPopupManagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDA5CCC2E25452100608205 /* Build configuration list for PBXNativeTarget "JHGPopupManagerDemoTests" */;
+			buildPhases = (
+				8FDA5CB02E25452100608205 /* Sources */,
+				8FDA5CB12E25452100608205 /* Frameworks */,
+				8FDA5CB22E25452100608205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FDA5CB62E25452100608205 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8FDA5CB72E25452100608205 /* JHGPopupManagerDemoTests */,
+			);
+			name = JHGPopupManagerDemoTests;
+			productName = JHGPopupManagerDemoTests;
+			productReference = 8FDA5CB42E25452100608205 /* JHGPopupManagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FDA5CBD2E25452100608205 /* JHGPopupManagerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDA5CCF2E25452100608205 /* Build configuration list for PBXNativeTarget "JHGPopupManagerDemoUITests" */;
+			buildPhases = (
+				8FDA5CBA2E25452100608205 /* Sources */,
+				8FDA5CBB2E25452100608205 /* Frameworks */,
+				8FDA5CBC2E25452100608205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FDA5CC02E25452100608205 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8FDA5CC12E25452100608205 /* JHGPopupManagerDemoUITests */,
+			);
+			name = JHGPopupManagerDemoUITests;
+			productName = JHGPopupManagerDemoUITests;
+			productReference = 8FDA5CBE2E25452100608205 /* JHGPopupManagerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FDA5C962E25451E00608205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					8FDA5C9D2E25451E00608205 = {
+						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
+					};
+					8FDA5CB32E25452100608205 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8FDA5C9D2E25451E00608205;
+					};
+					8FDA5CBD2E25452100608205 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8FDA5C9D2E25451E00608205;
+					};
+				};
+			};
+			buildConfigurationList = 8FDA5C992E25451E00608205 /* Build configuration list for PBXProject "JHGPopupManagerDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FDA5C952E25451E00608205;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8FDA5C9F2E25451E00608205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FDA5C9D2E25451E00608205 /* JHGPopupManagerDemo */,
+				8FDA5CB32E25452100608205 /* JHGPopupManagerDemoTests */,
+				8FDA5CBD2E25452100608205 /* JHGPopupManagerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FDA5C9C2E25451E00608205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDA5CB22E25452100608205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDA5CBC2E25452100608205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		810BA2CFDF6C9B40A584E8D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JHGPopupManagerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6193C5C04143E1149D05844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JHGPopupManagerDemo/Pods-JHGPopupManagerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JHGPopupManagerDemo/Pods-JHGPopupManagerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JHGPopupManagerDemo/Pods-JHGPopupManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FDA5C9A2E25451E00608205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDA5CB02E25452100608205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDA5CBA2E25452100608205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FDA5CB62E25452100608205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FDA5C9D2E25451E00608205 /* JHGPopupManagerDemo */;
+			targetProxy = 8FDA5CB52E25452100608205 /* PBXContainerItemProxy */;
+		};
+		8FDA5CC02E25452100608205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FDA5C9D2E25451E00608205 /* JHGPopupManagerDemo */;
+			targetProxy = 8FDA5CBF2E25452100608205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8FDA5CC82E25452100608205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6733CD1C94920AD23B77949 /* Pods-JHGPopupManagerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JHGPopupManagerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogc.www.JHGPopupManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JHGPopupManagerDemo/JHGPopupManagerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FDA5CC92E25452100608205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC7D6089B019104686C5C06 /* Pods-JHGPopupManagerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JHGPopupManagerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogc.www.JHGPopupManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "JHGPopupManagerDemo/JHGPopupManagerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FDA5CCA2E25452100608205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FDA5CCB2E25452100608205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FDA5CCD2E25452100608205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogc.www.JHGPopupManagerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JHGPopupManagerDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JHGPopupManagerDemo";
+			};
+			name = Debug;
+		};
+		8FDA5CCE2E25452100608205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogc.www.JHGPopupManagerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JHGPopupManagerDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JHGPopupManagerDemo";
+			};
+			name = Release;
+		};
+		8FDA5CD02E25452100608205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogc.www.JHGPopupManagerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JHGPopupManagerDemo;
+			};
+			name = Debug;
+		};
+		8FDA5CD12E25452100608205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogc.www.JHGPopupManagerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JHGPopupManagerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FDA5C992E25451E00608205 /* Build configuration list for PBXProject "JHGPopupManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDA5CCA2E25452100608205 /* Debug */,
+				8FDA5CCB2E25452100608205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDA5CC72E25452100608205 /* Build configuration list for PBXNativeTarget "JHGPopupManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDA5CC82E25452100608205 /* Debug */,
+				8FDA5CC92E25452100608205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDA5CCC2E25452100608205 /* Build configuration list for PBXNativeTarget "JHGPopupManagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDA5CCD2E25452100608205 /* Debug */,
+				8FDA5CCE2E25452100608205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDA5CCF2E25452100608205 /* Build configuration list for PBXNativeTarget "JHGPopupManagerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDA5CD02E25452100608205 /* Debug */,
+				8FDA5CD12E25452100608205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FDA5C962E25451E00608205 /* Project object */;
+}
