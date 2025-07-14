@@ -7,28 +7,28 @@
 
 import Foundation
 
-public protocol JHGPopupViewProtocol: AnyObject {
+@objc public protocol JHGPopupViewProtocol: NSObjectProtocol {
     
-    var isShowing: Bool { get }
+    @objc var isShowing: Bool { get }
     
-    var identifier: String { get }
+    @objc var identifier: String { get }
     
     /// 优先级默认0，数值越大优先级越高
-    var priority: Int { get }
+    @objc var priority: Int { get }
     
     /// 弹出弹窗
     /// - Parameters:
     ///   - animated: 是否动画
     ///   - completion: 弹窗弹出完成回调。
-    func jh_show(animated: Bool, completion: (() -> Void)?)
+    @objc func jh_show(animated: Bool, completion: (() -> Void)?)
     
     /// 关闭弹窗
     /// - Parameters:
     ///   - animated: 是否动画
     ///   - completion: 弹窗关闭完成回调。
-    func jh_hidden(animated: Bool, completion: (() -> Void)?)
+    @objc func jh_hidden(animated: Bool, completion: (() -> Void)?)
     
-    func shouldPopup(in viewController: UIViewController?) -> Bool
+    @objc func shouldPopup(in viewController: UIViewController?) -> Bool
 }
 
 extension JHGPopupViewProtocol {

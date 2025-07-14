@@ -94,6 +94,13 @@ class BroadcastBeginAlertView: JHGPopupView {
     @objc var cancelBtnDidClickedBlk: (() -> Void)?
     @objc var closeBtnDidClickedBlk: (() -> Void)?
     
+    override func shouldPopup(in viewController: UIViewController?) -> Bool {
+        if let vc = viewController, vc.isKind(of: FDEDetailViewController.self) {
+            return false
+        }
+        return true
+    }
+    
     deinit {
         
     }

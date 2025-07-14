@@ -57,7 +57,7 @@ class XQHelloWorldAlertView: UIView, JHGPopupViewProtocol {
         super.init(frame: frame)
         self.backgroundColor = .black.withAlphaComponent(0.6)
         self.addSubview(textLabel)
-        textLabel.text = "hello,world!"
+        textLabel.text = "任意自定义类型弹窗"
         textLabel.frame = CGRectMake(0, 0, 300, 300)
         textLabel.center = self.center
         textLabel.layer.cornerRadius = 8

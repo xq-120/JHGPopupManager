@@ -3,3 +3,4 @@
 //
 
 #import "JKInterActiveGroupVipUserModel.h"
+#import "JHGPopupView+Manager.h"
