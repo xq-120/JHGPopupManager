@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  spec.dependency "JHGPopupKit", '~> 1.7.0'
+  spec.dependency "JHGPopupKit/Utils", '~> 1.8.0'
 
 end

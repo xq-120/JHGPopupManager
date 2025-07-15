@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc public protocol JHGPopupViewProtocol: NSObjectProtocol {
+@objc public protocol JHGPopupManagerItemProtocol: NSObjectProtocol {
     
     @objc var isShowing: Bool { get }
     
@@ -28,10 +28,10 @@ import Foundation
     ///   - completion: 弹窗关闭完成回调。
     @objc func jh_hidden(animated: Bool, completion: (() -> Void)?)
     
-    @objc func shouldPopup(in viewController: UIViewController?) -> Bool
+    @objc func jh_shouldPopup(in viewController: UIViewController?) -> Bool
 }
 
-extension JHGPopupViewProtocol {
+extension JHGPopupManagerItemProtocol {
     
     var isShowing: Bool {
         if let vc = self as? UIViewController {
@@ -55,7 +55,7 @@ extension JHGPopupViewProtocol {
      
     func jh_hidden(animated: Bool, completion: (() -> Void)?) {}
     
-    func shouldPopup(in viewController: UIViewController?) -> Bool {
+    func jh_shouldPopup(in viewController: UIViewController?) -> Bool {
         return true
     }
 }

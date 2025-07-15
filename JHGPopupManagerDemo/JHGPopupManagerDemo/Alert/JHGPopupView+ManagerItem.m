@@ -2,12 +2,12 @@
 //  JHGPopupView+Manager.m
 //  JHGPopupManagerDemo
 //
-//  Created by 薛权 on 2025/7/14.
+//  Created by uzzi on 2025/7/14.
 //
 
-#import "JHGPopupView+Manager.h"
+#import "JHGPopupView+ManagerItem.h"
 
-@implementation JHGPopupView (Manager)
+@implementation JHGPopupView (ManagerItem)
 
 - (void)jh_showWithAnimated:(BOOL)animated completion:(void (^)(void))completion {
     [self showWithAnimated:animated completion:completion];
@@ -17,7 +17,7 @@
     [self hiddenWithAnimated:animated completion:completion];
 }
 
-- (BOOL)shouldPopupIn:(UIViewController *)viewController {
+- (BOOL)jh_shouldPopupIn:(UIViewController *)viewController {
     return true;
 }
 

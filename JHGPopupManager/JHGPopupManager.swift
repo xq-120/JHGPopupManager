@@ -12,9 +12,9 @@ public class JHGPopupManager {
     
     public static let manager = JHGPopupManager.init()
     
-    private var popupItems: [JHGPopupItem] = []
+    private var popupItems: [JHGPopupElement] = []
     
-    private var curPopupItem: JHGPopupItem?
+    private var curPopupItem: JHGPopupElement?
     
     private init() {
         let observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, CFRunLoopActivity.allActivities.rawValue, true, 0) { [weak self] ob, activity in
@@ -49,18 +49,18 @@ public class JHGPopupManager {
         }
     }
     
-    static public func show(popupView: JHGPopupViewProtocol, animated: Bool, completion: (() -> Void)?) {
-        let item = JHGPopupItem.init(popupView: popupView)
+    static public func show(popupView: JHGPopupManagerItemProtocol, animated: Bool, completion: (() -> Void)?) {
+        let item = JHGPopupElement.init(popupView: popupView)
         item.animated = animated
         item.onShowCompletion = completion
         JHGPopupManager.manager.enqueue(item)
     }
     
-    static public func hidden(popupView: JHGPopupViewProtocol, animated: Bool, completion: (() -> Void)?) {
+    static public func hidden(popupView: JHGPopupManagerItemProtocol, animated: Bool, completion: (() -> Void)?) {
         JHGPopupManager.manager.hidden(popupView: popupView, animated: animated, completion: completion)
     }
     
-    func hidden(popupView: JHGPopupViewProtocol, animated: Bool, completion: (() -> Void)?) {
+    func hidden(popupView: JHGPopupManagerItemProtocol, animated: Bool, completion: (() -> Void)?) {
         if curPopupItem?.popupView === popupView {
             popupView.jh_hidden(animated: animated, completion: completion)
             curPopupItem = nil
@@ -69,13 +69,13 @@ public class JHGPopupManager {
         }
     }
     
-    func remove(_ popupView: JHGPopupViewProtocol) {
+    func remove(_ popupView: JHGPopupManagerItemProtocol) {
         if let index = popupItems.firstIndex(where: {$0.popupView === popupView}) {
             popupItems.remove(at: index)
         }
     }
     
-    func enqueue(_ item: JHGPopupItem) {
+    func enqueue(_ item: JHGPopupElement) {
         popupItems.append(item)
         popupItems.sort(by: {$0.popupView.priority > $1.popupView.priority})
         dequeue()
@@ -97,7 +97,7 @@ public class JHGPopupManager {
         
         var poppingItemIndex: Int? = nil
         for (index, item) in popupItems.enumerated() {
-            if item.popupView.shouldPopup(in: JHGPopupUtils.topViewController()) {
+            if item.popupView.jh_shouldPopup(in: JHGPopupUtils.topViewController()) {
                 poppingItemIndex = index
                 break
             }
@@ -108,7 +108,7 @@ public class JHGPopupManager {
         show(item)
     }
     
-    func show(_ item: JHGPopupItem) {
+    func show(_ item: JHGPopupElement) {
         assert(Thread.isMainThread)
         curPopupItem = item
         item.isShowingInProgress = true

@@ -1,5 +1,5 @@
 //
-//  JHPopupItem.swift
+//  JHGPopupElement.swift
 //  JHPopupManager
 //
 //  Created by uzzi on 2025/6/12.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-class JHGPopupItem {
-    var popupView: JHGPopupViewProtocol
+class JHGPopupElement {
+    var popupView: JHGPopupManagerItemProtocol
     
     var animated: Bool = true
     
@@ -16,7 +16,7 @@ class JHGPopupItem {
     
     var onShowCompletion: (()->Void)?
     
-    init(popupView: JHGPopupViewProtocol) {
+    init(popupView: JHGPopupManagerItemProtocol) {
         self.popupView = popupView
     }
 }

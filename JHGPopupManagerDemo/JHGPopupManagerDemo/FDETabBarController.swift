@@ -20,7 +20,7 @@ class FDETabBarController: UITabBarController {
         if #available(iOS 15.0, *) {
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = .black.withAlphaComponent(0.8)  // 👉 设置你要的背景色
+            appearance.backgroundColor = .white   
             UITabBar.appearance().standardAppearance = appearance
             UITabBar.appearance().scrollEdgeAppearance = appearance
         }

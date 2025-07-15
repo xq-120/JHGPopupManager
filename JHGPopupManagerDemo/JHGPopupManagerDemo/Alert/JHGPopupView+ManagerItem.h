@@ -2,7 +2,7 @@
 //  JHGPopupView+Manager.h
 //  JHGPopupManagerDemo
 //
-//  Created by 薛权 on 2025/7/14.
+//  Created by uzzi on 2025/7/14.
 //
 
 #import <JHGPopupKit/JHGPopupView.h>
@@ -10,13 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JHGPopupView (Manager) <JHGPopupViewProtocol>
+@interface JHGPopupView (ManagerItem) <JHGPopupManagerItemProtocol>
 
 - (void)jh_showWithAnimated:(BOOL)animated completion:(void (^)(void))completion;
 
 - (void)jh_hiddenWithAnimated:(BOOL)animated completion:(void (^)(void))completion;
 
-- (BOOL)shouldPopupIn:(UIViewController *)viewController;
+- (BOOL)jh_shouldPopupIn:(UIViewController *)viewController;
 
 @end
 

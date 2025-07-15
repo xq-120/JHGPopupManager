@@ -52,10 +52,10 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
     func testManayAlert() {
         let alert0 = XQHelloWorldAlertView(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
         JHGPopupManager.show(popupView: alert0, animated: true) {
-            NSLog("AuditionEndBuyAlertView弹出")
+            NSLog("XQHelloWorldAlertView弹出")
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
-            alert0.jh_hidden(animated: true, completion: nil)
+            JHGPopupManager.hidden(popupView: alert0, animated: true, completion: nil)
         })
         
         let alert1 = AuditionEndBuyAlertView.init()
@@ -76,7 +76,7 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         
         let alert3_1 = JKPublishCommentAlertViewController.init()
         JHGPopupManager.show(popupView: alert3_1, animated: true) {
-            NSLog("LoveKeyAlertPopupView弹出")
+            NSLog("JKPublishCommentAlertViewController弹出")
         }
         
         let alert4 = SupportGroupVoteAlertView.init()

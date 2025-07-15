@@ -7,7 +7,7 @@
 
 import UIKit
 
-class XQHelloWorldAlertView: UIView, JHGPopupViewProtocol {
+class XQHelloWorldAlertView: UIView, JHGPopupManagerItemProtocol {
     
     var isShowing: Bool {
         return self.window != nil
@@ -43,11 +43,18 @@ class XQHelloWorldAlertView: UIView, JHGPopupViewProtocol {
     }
     
     func jh_hidden(animated: Bool, completion: (() -> Void)?) {
-        self.removeFromSuperview()
+        
+        UIView.animate(withDuration: 0.25) {
+            self.alpha = 0
+        } completion: { finished in
+            self.removeFromSuperview()
+            completion?()
+        }
+
         NSLog("==>关闭弹窗")
     }
     
-    func shouldPopup(in viewController: UIViewController?) -> Bool {
+    func jh_shouldPopup(in viewController: UIViewController?) -> Bool {
         return true
     }
     
