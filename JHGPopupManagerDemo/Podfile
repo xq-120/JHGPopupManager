@@ -7,7 +7,6 @@ target 'JHGPopupManagerDemo' do
 
 pod 'JHGPopupManager', :path => '../'
 pod 'SnapKit', '~> 5.0.0'
-#pod 'JHGPopupKit', '~> 1.8.0'
 
 end
 
