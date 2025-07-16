@@ -31,31 +31,4 @@ import Foundation
     @objc func jh_shouldPopup(in viewController: UIViewController?) -> Bool
 }
 
-extension JHGPopupManagerItemProtocol {
-    
-    var isShowing: Bool {
-        if let vc = self as? UIViewController {
-            return vc.view.window != nil
-        } else if let view = self as? UIView {
-            return view.window != nil
-        } else {
-            return false
-        }
-    }
-    
-    var identifier: String {
-        return String(describing: self)
-    }
-    
-    var priority: Int {
-        return 0
-    }
-    
-    func jh_show(animated: Bool, completion: (() -> Void)?) {}
-     
-    func jh_hidden(animated: Bool, completion: (() -> Void)?) {}
-    
-    func jh_shouldPopup(in viewController: UIViewController?) -> Bool {
-        return true
-    }
-}
+

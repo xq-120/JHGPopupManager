@@ -13,13 +13,25 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "13.0"
 
   spec.source       = { :git => "https://github.com/xq-120/JHGPopupManager.git", :tag => "#{spec.version}" }
-
-  spec.source_files = "JHGPopupManager/*.{swift}"
+  
+  spec.subspec 'Protocol' do |ss|
+    ss.source_files = 'JHGPopupManager/Protocol/JHGPopupManagerItemProtocol.swift'
+  end
+  
+  spec.subspec 'Core' do |ss|
+    ss.dependency 'JHGPopupManager/Protocol'
+    ss.dependency "JHGPopupKit/Utils", '~> 1.8.0'
+    ss.source_files = 'JHGPopupManager/Core/*.{swift}'
+  end
+  
+  spec.subspec 'JHGPopupKitSupport' do |ss|
+    ss.dependency 'JHGPopupManager/Core'
+    ss.dependency 'JHGPopupKit', '~> 1.8.0'
+    ss.source_files = 'JHGPopupManager/JHGPopupKitSupport/JHGPopupKitSupport.swift'
+  end
 
   spec.frameworks   = "Foundation", "UIKit"
 
   spec.requires_arc = true
   
-  spec.dependency "JHGPopupKit/Utils", '~> 1.8.0'
-
 end
