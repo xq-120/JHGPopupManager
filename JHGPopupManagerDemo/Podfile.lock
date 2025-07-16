@@ -30,7 +30,7 @@ PODS:
     - JHGPopupManager/Protocol
   - JHGPopupManager/JHGPopupKitSupport (1.0.0):
     - JHGPopupKit (~> 1.8.0)
-    - JHGPopupManager/Core
+    - JHGPopupManager/Protocol
   - JHGPopupManager/Protocol (1.0.0)
   - Masonry (1.1.0)
   - SnapKit (5.0.1)
@@ -51,7 +51,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   JHGPopupKit: 26e58cc25b1df49a7f586ad6c5cfb36201b8be32
-  JHGPopupManager: c51cee497a1aad3b258378ef0366fb220a813e72
+  JHGPopupManager: 44134155c2810e7bb06e7aa31d6f659a3c76319c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 

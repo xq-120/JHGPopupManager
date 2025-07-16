@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'JHGPopupKitSupport' do |ss|
-    ss.dependency 'JHGPopupManager/Core'
+    ss.dependency 'JHGPopupManager/Protocol'
     ss.dependency 'JHGPopupKit', '~> 1.8.0'
     ss.source_files = 'JHGPopupManager/JHGPopupKitSupport/JHGPopupKitSupport.swift'
   end
@@ -33,5 +33,6 @@ Pod::Spec.new do |spec|
   spec.frameworks   = "Foundation", "UIKit"
 
   spec.requires_arc = true
+  spec.swift_versions = ['5.0']
   
 end
