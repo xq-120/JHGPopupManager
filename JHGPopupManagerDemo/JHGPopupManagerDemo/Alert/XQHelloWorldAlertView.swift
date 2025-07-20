@@ -9,18 +9,6 @@ import UIKit
 
 class XQHelloWorldAlertView: UIView, JHGPopupManagerItemProtocol {
     
-    var isShowing: Bool {
-        return self.window != nil
-    }
-    
-    var identifier: String {
-        return ""
-    }
-    
-    var priority: Int {
-        return 0
-    }
-    
     weak var inView: UIView?
     
     deinit {
@@ -55,7 +43,7 @@ class XQHelloWorldAlertView: UIView, JHGPopupManagerItemProtocol {
     }
     
     func jh_shouldPopup(in viewController: UIViewController?) -> Bool {
-        return true
+        return false
     }
     
     var textLabel: UILabel = UILabel.init()

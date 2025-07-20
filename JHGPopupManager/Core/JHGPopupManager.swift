@@ -27,22 +27,16 @@ public class JHGPopupManager {
     func handleRunLoopActivity(activity: CFRunLoopActivity) {
         switch activity {
         case .entry:
-//            NSLog("activity-->entry")
             break;
         case .beforeTimers:
-//            NSLog("activity-->beforeTimers")
             break;
         case .beforeSources:
-//            NSLog("activity-->beforeSources")
             break;
         case .beforeWaiting:
-//            NSLog("activity-->beforeWaiting")
             dequeue()
         case .afterWaiting:
-//            NSLog("activity-->afterWaiting")
             break;
         case .exit:
-//            NSLog("activity-->exit")
             break;
         default:
             break;
@@ -97,7 +91,16 @@ public class JHGPopupManager {
         
         var poppingItemIndex: Int? = nil
         for (index, item) in popupItems.enumerated() {
-            if item.popupView.jh_shouldPopup(in: JHGPopupUtils.topViewController()) {
+//            if item.popupView.jh_shouldPopup(in: JHGPopupUtils.topViewController()) {
+//                poppingItemIndex = index
+//                break
+//            }
+            if let res = item.popupView.jh_shouldPopup?(in: JHGPopupUtils.topViewController()) {
+                if res {
+                    poppingItemIndex = index
+                    break
+                }
+            } else if item.popupView.jh_shouldPopup(in: JHGPopupUtils.topViewController()) {
                 poppingItemIndex = index
                 break
             }
