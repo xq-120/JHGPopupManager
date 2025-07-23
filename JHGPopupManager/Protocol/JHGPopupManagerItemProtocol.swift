@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc public protocol JHGPopupManagerItemProtocol: AnyObject {
+@objc public protocol JHGPopupManagerItemProtocol: NSObjectProtocol {
     
     @objc optional var isShowing: Bool { get }
     
