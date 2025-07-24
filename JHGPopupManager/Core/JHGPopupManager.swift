@@ -77,7 +77,7 @@ public class JHGPopupManager {
     
     func isShowing() -> Bool {
         guard let curPopupItem = curPopupItem else { return false }
-        if curPopupItem.isShowingInProgress || curPopupItem.popupView.isShowing {
+        if curPopupItem.isShowingInProgress || callIsShowing(popup: curPopupItem.popupView) {
             return true
         }
         return false
@@ -95,12 +95,16 @@ public class JHGPopupManager {
 //                poppingItemIndex = index
 //                break
 //            }
-            if let res = item.popupView.jh_shouldPopup?(in: JHGPopupUtils.topViewController()) {
-                if res {
-                    poppingItemIndex = index
-                    break
-                }
-            } else if item.popupView.jh_shouldPopup(in: JHGPopupUtils.topViewController()) {
+//            if let res = item.popupView.jh_shouldPopup?(in: JHGPopupUtils.topViewController()) {
+//                if res {
+//                    poppingItemIndex = index
+//                    break
+//                }
+//            } else if item.popupView.jh_shouldPopup(in: JHGPopupUtils.topViewController()) {
+//                poppingItemIndex = index
+//                break
+//            }
+            if callShouldPopup(popup: item.popupView) {
                 poppingItemIndex = index
                 break
             }
@@ -109,6 +113,38 @@ public class JHGPopupManager {
         
         let item = popupItems.remove(at: index)
         show(item)
+    }
+    
+    func callIsShowing(popup: JHGPopupManagerItemProtocol) -> Bool {
+        let sel = #selector(getter: JHGPopupManagerItemProtocol.isShowing)
+        if popup.responds(to: sel), let ret = popup.perform(sel).takeUnretainedValue() as? NSNumber {
+            return ret.boolValue
+        }
+        return popup.isShowing
+    }
+    
+    func callIdentifier(popup: JHGPopupManagerItemProtocol) -> String {
+        let sel = #selector(getter: JHGPopupManagerItemProtocol.identifier)
+        if popup.responds(to: sel), let ret = popup.perform(sel).takeUnretainedValue() as? String {
+            return ret
+        }
+        return popup.identifier
+    }
+    
+    func callPriority(popup: JHGPopupManagerItemProtocol) -> Int {
+        let sel = #selector(getter: JHGPopupManagerItemProtocol.priority)
+        if popup.responds(to: sel), let ret = popup.perform(sel).takeUnretainedValue() as? Int {
+            return ret
+        }
+        return popup.priority
+    }
+    
+    func callShouldPopup(popup: JHGPopupManagerItemProtocol) -> Bool {
+        let curTopVC = JHGPopupUtils.topViewController()
+        if popup.responds(to: #selector(JHGPopupManagerItemProtocol.jh_shouldPopup(in:))), let ret =  popup.jh_shouldPopup?(in: curTopVC){
+            return ret
+        }
+        return popup.jh_shouldPopup(in: curTopVC)
     }
     
     func show(_ item: JHGPopupElement) {
