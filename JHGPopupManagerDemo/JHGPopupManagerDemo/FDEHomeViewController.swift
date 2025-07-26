@@ -54,9 +54,6 @@ class FDEHomeViewController: FDEBaseViewController, UITableViewDelegate, UITable
         JHGPopupManager.show(popupView: alert0, animated: true) {
             NSLog("XQHelloWorldAlertView弹出")
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
-            JHGPopupManager.hidden(popupView: alert0, animated: true, completion: nil)
-        })
         
         let alert1 = AuditionEndBuyAlertView.init()
         JHGPopupManager.show(popupView: alert1, animated: true) {

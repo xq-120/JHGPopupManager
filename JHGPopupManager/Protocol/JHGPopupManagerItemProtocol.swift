@@ -32,7 +32,7 @@ import Foundation
     @objc optional func jh_shouldPopup(in viewController: UIViewController?) -> Bool
 }
 
-extension JHGPopupManagerItemProtocol {
+public extension JHGPopupManagerItemProtocol {
     var isShowing: Bool {
         if let vc = self as? UIViewController {
             return vc.view.window != nil
@@ -44,7 +44,7 @@ extension JHGPopupManagerItemProtocol {
     }
     
     var identifier: String {
-        return String.init(describing: self)
+        return String.init(describing: type(of: self))
     }
     
     var priority: Int {

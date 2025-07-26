@@ -96,6 +96,7 @@ class BroadcastBeginAlertView: JHGPopupView {
     
     override func jh_shouldPopup(in viewController: UIViewController?) -> Bool {
         if let vc = viewController, vc.isKind(of: FDEDetailViewController.self) {
+            NSLog("\(self.identifier)不能弹出")
             return false
         }
         return true

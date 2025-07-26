@@ -39,11 +39,11 @@ class XQHelloWorldAlertView: UIView, JHGPopupManagerItemProtocol {
             completion?()
         }
 
-        NSLog("==>关闭弹窗")
+        NSLog("==>关闭弹窗：\(self.identifier)")
     }
     
     func jh_shouldPopup(in viewController: UIViewController?) -> Bool {
-        return false
+        return true
     }
     
     var textLabel: UILabel = UILabel.init()
@@ -59,6 +59,13 @@ class XQHelloWorldAlertView: UIView, JHGPopupManagerItemProtocol {
         textLabel.textAlignment = .center
         textLabel.backgroundColor = .green
         textLabel.layer.masksToBounds = true
+        
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(onTapped(_:)))
+        addGestureRecognizer(tap)
+    }
+    
+    @objc func onTapped(_ sender: UIGestureRecognizer) {
+        jh_hidden(animated: true, completion: nil)
     }
     
     required init?(coder: NSCoder) {
